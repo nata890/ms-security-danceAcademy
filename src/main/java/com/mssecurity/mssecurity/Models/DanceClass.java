@@ -14,15 +14,15 @@ public class DanceClass {
     private String difficulty;
     private int duration;
     @DBRef
-    private Instructor instructor_id;
+    private Instructor instructor;
 
     public DanceClass (){
     }
 
-    public DanceClass(String difficulty, int duration, Instructor instructor_id) {
+    public DanceClass(String difficulty, int duration, Instructor instructor) {
         this.difficulty = difficulty;
         this.duration = duration;
-        this.instructor_id = instructor_id;
+        this.instructor = instructor;
     }
 
     public String get_id() {
@@ -46,11 +46,11 @@ public class DanceClass {
     }
 
     public Instructor getInstructor_id() {
-        return instructor_id;
+        return instructor;
     }
 
-    public void setInstructor_id(Instructor instructor_id) {
-        this.instructor_id = instructor_id;
+    public void setInstructor(Instructor instructor_id) {
+        this.instructor = instructor_id;
     }
 }
 
