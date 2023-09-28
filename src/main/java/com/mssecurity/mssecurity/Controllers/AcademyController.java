@@ -17,20 +17,17 @@ public class AcademyController {
     @Autowired
     private AcademyRepository theAcademyRepository;
 
-    //metodo para listar
     @GetMapping("")
     public List<Academy> index(){
         return this.theAcademyRepository.findAll();
     }
 
-    //metodo para almacenar
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public Academy store(@RequestBody Academy newAcademy){
         return this.theAcademyRepository.save(newAcademy);
     }
 
-    //metodo para ver uno
     @GetMapping("{id}")
     public Academy show(@PathVariable String id){
         Academy theAcademy=this.theAcademyRepository
@@ -39,7 +36,6 @@ public class AcademyController {
         return theAcademy;
     }
 
-    //metodo para la actualizacion
     @PutMapping("{id}")
     public Academy update(@PathVariable String id,@RequestBody Academy theNewAcademy){
         Academy theActualAcademy=this.theAcademyRepository
@@ -55,7 +51,6 @@ public class AcademyController {
         }
     }
 
-    //metodo de eliminacion
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("{id}")
     public void destroy(@PathVariable String id){
