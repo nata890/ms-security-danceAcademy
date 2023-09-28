@@ -45,12 +45,10 @@ public class DanceClass {
         this.duration = duration;
     }
 
-    public Instructor getInstructor_id() {
+    public Instructor getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(Instructor instructor_id) {
-        this.instructor = instructor_id;
-    }
+    public void setInstructor(Instructor instructor) { this.instructor = instructor; }
 }
 
