@@ -11,7 +11,6 @@ public class DanceClassStyle {
 
     @Id
     private String _id;
-    private String choreography;
 
     @DBRef
     private Style style;
@@ -19,20 +18,11 @@ public class DanceClassStyle {
     @DBRef
     private DanceClass danceClass;
 
-    public DanceClassStyle(String choreography) {
-        this.choreography = choreography;
+    public DanceClassStyle() {
     }
 
     public String get_id() {
         return _id;
-    }
-
-    public String getChoreography() {
-        return choreography;
-    }
-
-    public void setChoreography(String choreography) {
-        this.choreography = choreography;
     }
 
     public Style getStyle() {
