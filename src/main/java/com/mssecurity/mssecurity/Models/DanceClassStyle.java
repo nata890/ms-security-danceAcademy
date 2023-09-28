@@ -19,6 +19,9 @@ public class DanceClassStyle {
     @DBRef
     private DanceClass danceClass;
 
+    public DanceClassStyle() {
+    }
+
     public DanceClassStyle(String choreography) {
         this.choreography = choreography;
     }
