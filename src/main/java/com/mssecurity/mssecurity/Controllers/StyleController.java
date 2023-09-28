@@ -26,7 +26,7 @@ public class StyleController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public Style store(@RequestBody Style newStyle){
-        return this.theStyleRepository.save(newAcademy);
+        return this.theStyleRepository.save(newStyle);
     }
 
     //metodo para ver uno
