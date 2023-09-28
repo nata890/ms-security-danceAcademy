@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/instructor")
-public class InstructorController {
+@RequestMapping("/studentDanceClass")
+public class StudentDanceClassController {
 }
