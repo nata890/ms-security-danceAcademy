@@ -12,9 +12,9 @@ public class Academy {
     private String _id;
     private String name;
     private String address;
-    private String telephone;
+    private int telephone;
 
-    public Academy(String name, String address, String telephone) {
+    public Academy(String name, String address, int telephone) {
         this.name = name;
         this.address = address;
         this.telephone = telephone;
@@ -40,11 +40,11 @@ public class Academy {
         this.address = address;
     }
 
-    public String getTelephone() {
+    public int getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(String telephone) {
+    public void setTelephone(int telephone) {
         this.telephone = telephone;
     }
 }
